@@ -169,12 +169,13 @@ body{
     .left{
         width:100%;
         order: 2;
+        padding:10px;
     }
     .who{
         margin:0;
     }
     .left__top{
-        padding-left:40px;
+        padding-left:35px;
     }
     .right {
         width: 100%;
