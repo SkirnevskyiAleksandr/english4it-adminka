@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Admin Merchant Sign In</title>
 </head>
@@ -27,7 +29,7 @@
             <div class="merchant">
                 <h2 class="title">Merchant Hiretool</h2>
                 <h3 class="sigin-in">Sign In</h3>
-                <form action="" class="form">
+                <form action="" class="form" name = "siginIn">
                     <label class = "email-lable" for="email">Email</label>
                     <input type="email"
                         id="email"
@@ -53,16 +55,28 @@
                     >
                     <a href="../../pages/fogot__password/fogot-password.html" class="fogot">Forgot password</a>
                     <label class="eye">
-                        <input type="checkbox" checked class="eye__input"/>
+                        <input id="eye__input" type="checkbox" class="eye__input"/>
                         <span class="eye__checkbox">
-                    
-                </label>
+                    </label>
                     <hr class="line"/>
-        
-                    </form>
+                    <div class="remember-wrapper">
+                        <label class="remember-me__lable">
+                            <input  type="checkbox" class="remember-me__checkbox" />
+                            <span class="remember-me__icon"></span>
+                            Remember me
+                        </label>    
+                        <button type="submit" class="siginIn-button">Sign in</button>
+                    </div>    
+                </form>
+                <div class="sign-up-wrapper">
+                    <span class="sign-up-text">Don't have an account yet?</span>
+                    <a href="#" class="sign-up">Sign Up</a>
+                </div>
             </div>
+            
             
         </section>
     </main>
 </body>
+<script src="./script.js"></script>
 </html>
