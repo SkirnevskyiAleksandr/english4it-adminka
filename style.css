@@ -48,12 +48,6 @@ body{
     width:100%;
     height:100%;
 }
-.logo__small{
-    /* max-width: 70px; */
-    width:19%;
-    display:none;
-    margin-bottom: 10px;
-}
 .left__bottom{
     width: 100%;
     height:80%;
@@ -114,26 +108,19 @@ body{
 }
 
 .exit-button{
-    max-width:26px;
-    max-height:26px;
+    width:26px;
+    height:26px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     cursor: pointer;
 }
-.exit-button__icon{
-    width:100%;
-    height:100%;
-}
 
 .right__bottom{
     width:80%;
     height:62%;
     margin: 0 auto;
-}
-.right__bottom_small{
-    display:none;
 }
 .right__bottom_picture{
     width: 100%;
@@ -171,17 +158,6 @@ body{
         justify-content: center;
         align-items:center;
     }
-    .logo{
-        display:none;
-    }
-    .logo__small{
-        display:block;
-    }
-    .exit-button{
-        margin-left: 44px;
-        width:12px;
-        height: 12px;
-    }
     .welcome{
         width:50%;
     }
@@ -203,25 +179,14 @@ body{
     }
     .right {
         width: 100%;
-        /* height:20%; */
+        height:20%;
         order: 1;
         padding-top: 10px;
 
     }
     .right__top{
         width:95%;
-        align-items:start;
-        padding-top:5px;
        
-    }
-    .right__bottom{
-        display:none;
-    }
-    .right__bottom_small{
-        display: inline-block;
-        width:20%;
-        height: 100%;
-        margin: 0 auto;
     }    
 }
 
@@ -248,7 +213,7 @@ body{
         width: 70px;
     }
     .right{
-        /* height:20%; */
+        height:20%;
         padding: 0;
     }
     .circle{
@@ -259,25 +224,4 @@ body{
         width: 12px;
         height: 12px;
     }
-}
-/* @media screen and (max-height:350px){
-    .right__bottom_small{
-        height:25%;
-    }
-.logo__small{
-    margin-bottom: 0;
-}
-.exit-button__icon {
-    width: 12px;
-    height: 12px;
-}
-.right__top_points {
-    width: 70px;
-    height: 16.2px;
-    text-decoration: none;
-}
-} */
-@media screen and (max-height:350px){
-.right__top {
-    align-items:center
 }
