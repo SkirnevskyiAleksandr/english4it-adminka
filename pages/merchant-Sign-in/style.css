@@ -130,7 +130,7 @@ body{
     height:19px;
     display:block;
     border:none;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     /* font-family: Inter V; */
     font-style: normal;
     font-weight: 100;
@@ -142,6 +142,7 @@ body{
     width:100%;
     height: 1px;
     margin-bottom: 32px;
+    margin-top: 8px;
     background-color: black;
 }
 .password-lable{
@@ -172,7 +173,7 @@ body{
     /* display:inline-block; */
     width:96px;
     height: 15px;
-    margin-left: 100px;
+    margin-left: 80px;
     text-decoration: none;
     font-family: Inter;
     font-style: normal;
@@ -180,5 +181,29 @@ body{
     font-size: 12px;
     line-height: 15px;
     color: #888888;
+}
+.eye{
+    position: relative;
+    top:5px;
+    width:22px;
+    height: 18.32px;
+    display:inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.eye__input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+.eye__checkbox{
+    width:22px;
+    height:18px;
+    display:inline-flex;
+    background-image:url(../../images/close_eye.svg);
 }
 
