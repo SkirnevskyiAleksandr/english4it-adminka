@@ -111,5 +111,28 @@ body{
     line-height: 24px;
     /* text-align: center; */
     color: #2F796F;
+}
 
+/* media */
+@media screen and (max-width:992px){
+    .header-container{
+        padding-left: 60px;
+    }
+}
+@media screen and (max-width:768px){
+    .header-container{
+        padding-left: 30px;
+        padding-top:22px;
+    }
+    .hiretool-wrapper{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-height:540px){
+    .hiretool-wrapper{
+        margin-bottom: 10px;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
 }
