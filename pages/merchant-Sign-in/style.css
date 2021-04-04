@@ -157,6 +157,10 @@ body{
     line-height: 19px;
     color: #000000;
 }
+.password-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
 .password-input{
     width:156px;
     height: 19px;
@@ -172,7 +176,7 @@ body{
 .fogot{
     width:96px;
     height: 15px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     text-decoration: none;
     font-family: Inter;
     font-style: normal;
@@ -290,6 +294,7 @@ body{
     background-color: #2F796F;
     outline: none;
 }
+
 /* sign-up */
 .sign-up-wrapper{
     display:flex;
@@ -315,4 +320,67 @@ body{
     line-height: 19px;
     color: #2F796F;
     text-decoration: none;
+}
+ /* media */
+ @media screen and (max-width:992px){
+     .header-container{
+         padding-left: 60px;
+     }
+     .merchant{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+ }
+
+ @media screen and (max-width:768px){
+    .header-container{
+        padding-left: 30px;
+        padding-top:22px;
+    }
+    .logo{
+        margin-bottom:15px;
+    }
+}
+@media screen and (max-width:420px){
+    .header-container{
+        padding-top:7px;
+        padding-left:10px;
+}
+}
+
+
+@media screen and (max-height:530px){
+    .header-container{
+        padding-top:7px;
+        padding-left:10px;
+    }
+    .logo{
+        margin-bottom:8px ;
+    }
+}
+
+@media screen and (max-height:430px){
+    .email-lable{
+        margin-bottom: 3px;
+    }
+    .password-lable{
+        margin-bottom: 3px;
+    }
+    .line{
+        margin-bottom: 8px;
+    }
+    .remember-wrapper{
+        margin-bottom: 17px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .sigin-in{
+        font-size:22px ;
+        max-height:27px;
+    }
+    .siginIn-button{
+        width:162px;
+        height:35px;
+    }
 }

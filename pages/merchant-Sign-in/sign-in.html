@@ -43,21 +43,24 @@
                     <hr class="line"/>
 
                     <label class = "password-lable" for="password">Password</label>
-                    <input type="password"
-                        id="password"
-                        class="password-input"
-                        name="password"
-                        placeholder="Write your Password"
-                        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
-                        title="Minimum 8 characters, UPPERCASE, lowercase and Number"
-                        minlength="6"
-                        required
-                    >
-                    <a href="../../pages/fogot__password/fogot-password.html" class="fogot">Forgot password</a>
-                    <label class="eye">
-                        <input id="eye__input" type="checkbox" class="eye__input"/>
-                        <span class="eye__checkbox">
-                    </label>
+                    <div class="password-wrapper">
+                        <input type="password"
+                            id="password"
+                            class="password-input"
+                            name="password"
+                            placeholder="Write your Password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                            title="Minimum 8 characters, UPPERCASE, lowercase and Number"
+                            minlength="6"
+                            required>
+                            <div class="fogot-password-wrapper">
+                                <a href="../../pages/fogot__password/fogot-password.html" class="fogot">Forgot password</a>
+                                <label class="eye">
+                                    <input id="eye__input" type="checkbox" class="eye__input"/>
+                                    <span class="eye__checkbox">
+                                </label>
+                            </div>
+                    </div>
                     <hr class="line"/>
                     <div class="remember-wrapper">
                         <label class="remember-me__lable">
