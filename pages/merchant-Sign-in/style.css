@@ -347,12 +347,22 @@ body{
     .header-container{
         padding-top:7px;
         padding-left:10px;
+    }
 }
+@media screen and (max-width:350px){
+    .siginIn-button{
+        width:130px;
+    }
+}
+@media screen and (max-width:325px){
+    .title{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
 }
 
-/* @media screen and (max-height:992px){
-    
-} */
+
 @media screen and (max-height:580px){
     .header-container{
         padding-top:7px;
