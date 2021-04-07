@@ -106,7 +106,7 @@ body{
     max-width:78px;
     max-height: 36px;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     font-style: normal;
     font-family: Inter;
     font-weight: 500;
@@ -114,24 +114,6 @@ body{
     line-height: 150%;
     text-align: center;
     color: #000000;
-}
-.incorrect-password{
-    /* width: inherit;
-    height: 100%; */
-    /* max-width: 386px;
-    max-height: 38px; */
-    box-sizing: border-box;
-    padding:10px 10px;
-    margin-bottom: 24px;
-    background: #ED7474;
-    border-radius: 4px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #FFFFFF;
 }
 .email-lable{
     width:41px;
@@ -228,12 +210,12 @@ body{
     box-shadow: 0 0 0 0.1em  #2F796F;               
 }
 .eye__input:checked + .eye__checkbox{
-    background-image:url(../../images/open_eye.svg);
+    background-image:url(../../../images/open_eye.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 .show-password{
-    background-image:url(../../images/open_eye.svg);
+    background-image:url(../../../images/open_eye.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -244,7 +226,7 @@ body{
     width:22px;
     height:18px;
     display:inline-flex;
-    background-image:url(../../images/close_eye.svg);
+    background-image:url(../../../images/close_eye.svg);
 }
 .remember-wrapper{
     margin-bottom: 40px;
@@ -282,7 +264,7 @@ body{
     
 }
 .remember-me__checkbox:checked + .remember-me__icon{
-     background-image:url(../../images/checkbox_checked.svg);
+     background-image:url(../../../images/checkbox_checked.svg);
      background-color: #2F796F;    
      background-repeat: no-repeat;
      background-position: center;
@@ -342,17 +324,17 @@ body{
     text-decoration: none;
 }
  /* media */
-@media screen and (max-width:992px){
-    .header-container{
-        padding-left: 60px;
+ @media screen and (max-width:992px){
+     .header-container{
+         padding-left: 60px;
+     }
+     .merchant{
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .merchant{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-}
+ }
 
-@media screen and (max-width:768px){
+ @media screen and (max-width:768px){
     .header-container{
         padding-left: 30px;
         padding-top:22px;
@@ -381,7 +363,7 @@ body{
 }
 
 
-@media screen and (max-height:615px){
+@media screen and (max-height:580px){
     .header-container{
         padding-top:7px;
         padding-left:10px;
@@ -390,19 +372,16 @@ body{
         margin-bottom:8px ;
     }
 }
-@media screen and (max-height:560px){
+@media screen and (max-height:510px){
     .title{
         margin-bottom: 0;
     }
     .sigin-in{
         margin-bottom: 0;
     }
-    .incorrect-password{
-        margin-bottom: 12px;
-    }
 }
 
-@media screen and (max-height:510px){
+@media screen and (max-height:450px){
     .email-lable{
         margin-bottom: 3px;
     }
@@ -421,20 +400,13 @@ body{
     .sigin-in{
         font-size:22px ;
         max-height:27px;
-        margin-bottom: 5px;
-    }
-    .incorrect-password{
-        margin-bottom: 0;
     }
     .siginIn-button{
         width:162px;
         height:35px;
     }
 }
-@media screen and (max-height:395px){
-    /* .logo{
-        height:45%;
-    } */
+@media screen and (max-height:322px){
     .title{
         line-height: 32px;
     }
@@ -443,17 +415,5 @@ body{
     }
     .sign-up-text{
         margin-bottom: 5px;
-    }
-}
-@media screen and (max-height:360px){
-    .title{
-        line-height: 32px;
-    }
-    .incorrect-password{
-        padding:0;
-    }
-    .line{
-        margin-top: 1px;
-        margin-bottom: 3px;
     }
 }

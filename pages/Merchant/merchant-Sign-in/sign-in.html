@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>hiretool</title>
+</head>
+
+<body>
+    <main class="container">
+       <header class="header-container">
+            <a href="#" class="logo">
+                <img class="logo__icon" src="../../../images/logo.svg" alt="logo hiretools">
+            </a>
+            <a href="../../../index.html" class="choice-admin">
+                <img src="../../../images/choose_admin_left_arrow.svg" alt="back to choice admin icon" class="choice-admin__icon">
+                <span class="choice-admin__text">Back to choice admin</span>
+            </a>
+        </header>
+
+        <!-- merchant hiretool -->
+        <section class="hiretool-wrapper">
+            <div class="merchant">
+                <h2 class="title">Merchant Hiretool</h2>
+                <h3 class="sigin-in">Sign In</h3>
+                <form action="" class="form" name = "siginIn">
+                    <label class = "email-lable" for="email">Email</label>
+                    <input type="email"
+                        id="email"
+                        class="email-input"
+                        name="email"
+                        placeholder = "Write your Email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        title="name@domain.etc"
+                        required
+                    >
+                    <hr class="line"/>
+
+                    <label class = "password-lable" for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password"
+                            id="password"
+                            class="password-input"
+                            name="password"
+                            placeholder="Write your Password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                            title="Minimum 8 characters, UPPERCASE, lowercase and Number"
+                            minlength="6"
+                            required>
+                            <div class="fogot-password-wrapper">
+                                <a href="../fogot__password/fogot-password.html" class="fogot">Forgot password</a>
+                                <label class="eye">
+                                    <input id="eye__input" type="checkbox" class="eye__input"/>
+                                    <span class="eye__checkbox">
+                                </label>
+                            </div>
+                    </div>
+                    <hr class="line"/>
+                    <div class="remember-wrapper">
+                        <label class="remember-me__lable">
+                            <input  type="checkbox" class="remember-me__checkbox" />
+                            <span class="remember-me__icon"></span>
+                            Remember me
+                        </label>    
+                        <button type="submit" class="siginIn-button">Sign in</button>
+                    </div>    
+                </form>
+                <div class="sign-up-wrapper">
+                    <span class="sign-up-text">Don't have an account yet?</span>
+                    <a href="../merchant_SignUP/index.html" class="sign-up">Sign Up</a>
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
