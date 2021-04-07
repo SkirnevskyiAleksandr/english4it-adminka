@@ -1,0 +1,414 @@
+*{margin:0; pading:0; }
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:#e5e5e5;
+    margin: 0;
+}
+
+/* main */
+.container{
+    width:100%;
+    height:100%;
+    max-width: 1440px;
+    max-height: 700px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    overflow: hidden;
+    background-color:#ffffff;
+}
+
+/* header */
+.header-container{
+    width:100%;
+    max-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left:120px;
+    padding-top: 42px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    max-width: 102px;
+    max-height:30px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.logo__icon{
+    width:100%;
+    height:100%;
+}
+.choice-admin{
+    width: 100%;
+    height: 100%;
+    max-width: 154px;
+    max-height: 17px;
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.choice-admin__icon{
+    width:6px;
+    height: 10px;
+    color:black;
+}
+
+/* merchant hiretool */
+.hiretool-wrapper{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.merchant{
+    width:100%;
+    height: 100%;
+    max-width: 386px;
+    max-height: 454px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 41px;
+    display:inline-block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 41px;
+    letter-spacing: 0em;
+    color: #2F796F;
+    font-weight: bold;
+    text-align: center;
+}
+.sigin-in{
+    width: 100%;
+    /* height: 100%; */
+    display:inline-block;
+    max-width:184px;
+    max-height: 36px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+.reset-password-text{
+    /* max-width: 372px; */
+    max-height: 48px;
+    margin-bottom: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+
+.line{
+    width:100%;
+    height: 1px;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    background-color: black;
+}
+.password-lable{
+    width:114px;
+    height: 19px;
+    display:block;
+    margin-bottom: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.password-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.password-input{
+    width:195px;
+    height: 19px;
+    /* display:block; */
+    border:none;
+    /* font-family: Inter V; */
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8F8F8F;
+}
+.fogot{
+    width:96px;
+    height: 15px;
+    /* margin-left: 80px; */
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #888888;
+}
+.eye{
+    position: relative;
+    top:5px;
+    width:22px;
+    height: 18.32px;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.eye__input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+.eye__input:focus + .eye__checkbox{
+    box-shadow: 0 0 0 0.1em  #2F796F;               
+}
+.eye__input:checked + .eye__checkbox{
+    background-image:url(../../../images/open_eye.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.show-password{
+    background-image:url(../../../images/open_eye.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.eye:hover{
+    box-shadow: 0 0 0 0.1em#2F796F;;
+}
+.eye__checkbox{
+    width:22px;
+    height:18px;
+    display:inline-flex;
+    background-image:url(../../../images/close_eye.svg);
+}
+.checkbox-wrapper{
+    max-width:386px;
+}
+.checkbox-lable{
+    max-width:350px;
+    display:flex;
+    margin: 0;
+    margin-bottom: 9px;
+    align-items:center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F796F;
+}
+.input-checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+.checkbox-icon{
+    width: 22px;
+    height: 18px;
+    margin-right: 13px;
+    display: inline-flex;
+    background-image:url(../../../images/checkbox-gray.svg);
+    cursor: pointer;
+}
+.input-checkbox:checked + .checkbox-icon{
+    background-image:url(../../../images/checkbox-green.svg);
+}
+.remember-wrapper{
+    margin-top:27px;
+}
+/*  */
+/* siginIn-button */
+.remember-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.siginIn-button{
+    width:386px;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 20px; */
+    background: #D3D3D3;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 68px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.siginIn-button:active{
+    background-color: #2F796F;
+    outline: none;
+}
+
+
+ /* media */
+ @media screen and (max-width:992px){
+     .header-container{
+         padding-left: 60px;
+     }
+     .merchant{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+ }
+
+ @media screen and (max-width:768px){
+    .header-container{
+        padding-left: 30px;
+        padding-top:22px;
+    }
+    .logo{
+        margin-bottom:15px;
+    }
+}
+@media screen and (max-width:420px){
+    .header-container{
+        padding-top:7px;
+        padding-left:10px;
+    }
+}
+/* @media screen and (max-width:350px){
+    .line{
+        margin-bottom: ;
+    }
+} */
+@media screen and (max-width:325px){
+    .title{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .form{
+        margin-top: 12px;
+    }
+    
+}
+
+
+@media screen and (max-height:580px){
+    .header-container{
+        padding-top:7px;
+        padding-left:10px;
+    }
+    .logo{
+        margin-bottom:8px ;
+    }
+}
+@media screen and (max-height:510px){
+    .title{
+        margin-bottom: 0;
+    }
+    .sigin-in{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-height:450px){
+    .header-container{
+        width: 15%;
+    }
+    .password-lable{
+        margin-bottom: 3px;
+    }
+    .line{
+        margin-bottom: 8px;
+    }
+    .remember-wrapper{
+        margin-bottom: 17px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .reset-password-text{
+        margin-bottom: ;
+    }
+    /* .sigin-in{
+        font-size:22px ;
+        max-height:27px;
+    }
+    .siginIn-button{
+        width:162px;
+        height:35px;
+    } */
+}
+@media screen and (max-height:420px){
+    .remember-wrapper{
+        margin-top: 14px;
+    }
+    .reset-password-text{
+        margin-bottom: 9px;
+    }
+
+}
+@media screen and (max-height:375px){
+    .title{
+        font-size:25px ;
+    }
+    .sigin-in{
+        font-size: 19px;
+        line-height:100%;
+    }
+    .reset-password-text{
+        line-height: 105%;
+    }
+    .checkbox-lable{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-height:322px){
+    .title{
+        line-height: 32px;
+    }
+    /* .sigin-in{
+        height: auto;
+    }
+    .sign-up-text{
+        margin-bottom: 5px;
+    } */
+}
