@@ -18,7 +18,8 @@ body{
     display:flex;
     flex-direction:column;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color:#ffffff;
 }
 
@@ -27,6 +28,16 @@ body{
     width:100%;
     max-height: 90px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left:120px;
+    padding-top: 42px;
+}
+.header-container-hide{
+    width:100%;
+    max-height: 90px;
+    display: flex;
+    display:none;
     flex-direction: column;
     justify-content: flex-start;
     padding-left:120px;
@@ -99,6 +110,7 @@ body{
     font-weight: bold;
     text-align: center;
 }
+
 .sigin-in{
     width: 100%;
     height: 100%;
@@ -138,6 +150,7 @@ body{
     line-height: 19px;
     color: #8F8F8F;
 }
+
 .company-name-input:hover{
     outline: none;
 }
@@ -211,9 +224,30 @@ body{
     line-height: 19px;
     color: #8F8F8F;
 }
+
 .email-input:focus{
     outline: none;
 }
+.requirements{
+    /* padding: 0 30px 0 50px;
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden; */
+    font-family: Inter V;
+font-style: normal;
+font-weight: 100;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #F03636;
+}
+/* input:invalid + .requirements{
+    max-height: 200px;
+    padding: 0 30px 20px 50px;
+} */
 .line{
     width:100%;
     height: 1px;
@@ -311,15 +345,18 @@ body{
 .invite-code-input{
     width: 156px;
     height: 19px;
-    /* display: block; */
     border: none;
-    /* font-family: Inter V; */
+    font-family: Inter;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #8F8F8F;
 }
+.invite-code-input:focus{
+    outline: none;
+}
+
 .remember-wrapper{
     margin-bottom: 40px;
 }
