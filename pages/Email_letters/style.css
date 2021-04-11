@@ -1,0 +1,195 @@
+*{margin:0; pading:0; }
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:#e5e5e5;
+    margin: 0;
+}
+.main-container{
+    width:100%;
+    height:100%;
+    max-width: 660px;
+    max-height: 614px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    background-color:#ffffff;
+}
+/* header */
+.header-container{
+    height: 15%;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 60px;
+    border-bottom: 1px solid rgb(196,196,196);
+}
+.logo{
+    text-decoration: none;
+}
+.read-it{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #2F796F;
+    text-decoration: none;
+}
+.letter-icon{
+    margin-left: 15px;
+}
+
+/* letter-text */
+.letter-text{
+    height: 68%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    box-sizing: border-box;
+    padding: 30px 60px 40px;
+}
+.title{
+    margin-bottom: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+.text{
+    width:100%;
+    max-width:540px;
+    max-height: 120px;
+    padding-bottom: 32px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+}
+.resent-password-button{
+    width: 100%;
+    height: 100%;
+    max-width:307px;
+    max-height: 42px;
+    margin-bottom: 32px;
+    background: #2F796F;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 46px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border:none;
+    outline: none;
+}
+.resent-password-button:focus{
+    box-shadow: 5px 5px 5px 5px rgba(32, 2, 2, 0.3);
+}
+.text-change-password{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+}
+/* footer */
+.footer-container{
+    height: 15%;
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: #E2FFF8;
+}
+.logo-footer{
+    max-width: 235px;
+    max-height: 65px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+.logo__icon_footer{
+    margin-bottom: 14px;
+}
+
+/* media */
+@media screen and (max-width:660px) {
+    .main-container{
+        min-height: 510px;
+        overflow-y: scroll;
+        padding-bottom: 0;
+    }
+    
+.text{
+    max-height: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.header-container{
+    padding:30px 10px;
+}
+}
+@media screen and (max-width:545px){
+    .letter-text{
+        padding:5px 10px;
+    }
+    .title{
+        margin-bottom: 5px;
+    }
+    .resent-password-button{
+        margin-bottom:5px;
+    }
+}
+@media screen and (max-width:322px) {
+    .letter-icon{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-height:610px) {
+    .text,
+    .text-change-password
+    {
+        font-size: 18px;
+    }
+    .letter-text{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-height:500px) {
+    .text,
+    .text-change-password
+    {
+        font-size: 16px;
+    }
+}
